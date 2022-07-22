@@ -614,6 +614,16 @@ fieldset {
   position: absolute;
   left: 14px;
   top: 53%;
+
+  fill:#212121;
+}
+
+.form-field-input:focus-within + .form-field-icon {
+  fill: #2196F3;
+}
+
+.form-field-input:focus-within {
+  border-color: #2196F3;
 }
 
 
@@ -649,10 +659,11 @@ fieldset {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field-inner :focus {
+
+
+.form-field-input:focus-within {
   border-color: #2196F3;
 }
-
 
 .form-field-textarea {
   height: 120px;
