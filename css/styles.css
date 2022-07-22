@@ -616,9 +616,6 @@ fieldset {
   top: 53%;
 }
 
-.form-field-icon :focus {
-  fill: #2196F3;
-}
 
 .form-field-label {
   margin-bottom: 4px;
@@ -654,8 +651,8 @@ fieldset {
 
 .form-field-inner :focus {
   border-color: #2196F3;
-  fill: #2196F3;
 }
+
 
 .form-field-textarea {
   height: 120px;
