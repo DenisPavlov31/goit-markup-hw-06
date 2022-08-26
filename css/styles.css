@@ -775,14 +775,19 @@ color: #212121;
   border-color: var(--accent-color);
 }
 
+.agreement-link {
+  border-bottom: 1px;
+  border-color: #2196F3;
+}
 
 .subscribe-section {
-  margin-left: auto;
+  margin-left: 815px;
+  margin-top: -140px;
+  margin-bottom: 94px;
   display: flex;
 }
 
 .subscribe-form {
-  display: flex;
   align-items: flex-end;
   padding-top: 12px;
 }
@@ -792,6 +797,7 @@ color: #212121;
 }
 
 .subscribe-name {
+  margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -800,7 +806,6 @@ color: #212121;
 
 .subscribe-input {
   display: block;
-  margin-top: 20px;
   padding-left: 16px;
   height: 50px;
   width: 358px;
@@ -824,10 +829,24 @@ color: #212121;
 }
 
 .subscribe-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--primary-button-text-color);
+  color: var(--primary-button-text-color);
   width: 200px;
   height: 50px;
+  margin-left: 12px;
   background: #2196F3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 4px;
   outline: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.subscribe-icon {
+  margin-left: 10px;
 }
