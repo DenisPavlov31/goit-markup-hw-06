@@ -395,6 +395,26 @@
           </ul>
         </div>
       </div>
+      <div class="subscribe-section">
+        <form action="#" class="subscribe-form">
+          <p class="subscribe-name">Подпишитесь на рассылку</p>
+          <div class="sub-correct">
+            <input
+              type="text"
+              name="subscribe-name-footer"
+              class="subscribe-input"
+              id="subscribe"
+              placeholder="E-mail"
+              required
+            />
+            <button type="submit" class="subscribe-button">
+              Подписаться<svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -428,7 +448,7 @@
               <div class="form-field">
                 <label class="form-field-label" for="user-mail">Почта</label>
                 <div class="form-field-inner">
-                  <input class="form-field-input" id="user-mail" type="mail" name="user-mail"/>
+                  <input class="form-field-input" id="user-mail" type="mail" name="user-mail" />
                   <svg class="form-field-icon" width="16" height="12">
                     <use href="./images/sprite.svg#mail-modal"></use>
                   </svg>
@@ -437,22 +457,34 @@
               <div class="form-field">
                 <label class="form-field-label" for="user-comment">Комментарий</label>
                 <div class="form-field-inner">
-                <textarea
-                  class="form-field-input form-field-textarea"
-                  name="user-comment"
-                  id="user-comment"
-                  rows="10"
-                  placeholder="Введите текст"
-                ></textarea>
+                  <textarea
+                    class="form-field-input form-field-textarea"
+                    name="user-comment"
+                    id="user-comment"
+                    rows="10"
+                    placeholder="Введите текст"
+                  ></textarea>
                 </div>
               </div>
-              </fieldset>
               <div class="form-field">
-                <input id="terms-condition" type="checkbox" name="terms-condition" />
-                <label for="terms-condition">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                <input
+                  class="input-check visually-hidden"
+                  id="terms-condition"
+                  type="checkbox"
+                  name="terms-condition"
+                />
+                <label for="terms-condition" class="check-text">
+                  <span>
+                    <svg class="check-icon" width="12" height="9">
+                      <use href="./images/sprite.svg#check-icon"></use>
+                    </svg>
+                  </span>
+                  Соглашаюсь с рассылкой и принимаю Условия договора</label
+                >
               </div>
               <button class="hero-button button primary form-field-button" type="submit">Отправить</button>
             </form>
+          </fieldset>
         </div>
       </div>
     </div>

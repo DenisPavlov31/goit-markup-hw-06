@@ -603,7 +603,7 @@ fieldset {
 }
 
 .form-field {
-  margin-bottom: 28px;
+  margin-bottom: 14px;
 }
 
 .form-field {
@@ -619,7 +619,7 @@ fieldset {
 }
 
 .form-field-input:focus-within + .form-field-icon {
-  fill: #2196F3;
+  fill:#2196F3;
 }
 
 .form-field-input:focus-within {
@@ -707,7 +707,7 @@ fieldset {
 }
 
 .modal-title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   white-space: nowrap;
   font-family: 'Roboto';
   font-style: normal;
@@ -736,4 +736,98 @@ color: #212121;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.check-text {
+  font-size: 14px;
+  color:#757575;
+  display: flex;
+  align-items: center;
+}
+
+.check-text span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 3px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+.check-icon {
+  fill: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-check:checked + .check-text span {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.input-check:checked + .check-text .check-icon {
+  fill: #ffffff;
+}
+
+.input-check:focus + .check-text span {
+  border-color: var(--accent-color);
+}
+
+
+.subscribe-section {
+  margin-left: auto;
+  display: flex;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: flex-end;
+  padding-top: 12px;
+}
+
+.sub-correct {
+  display: flex;;
+}
+
+.subscribe-name {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-button-text-color);
+}
+
+.subscribe-input {
+  display: block;
+  margin-top: 20px;
+  padding-left: 16px;
+  height: 50px;
+  width: 358px;
+  border-color: #ffffff4d;
+  border-radius: 4px;
+  outline: none;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.subscribe-input:focus-visible {
+  outline-color: var(--accent-color);
+}
+
+.subscribe-input:not(:placeholder-shown):required:valid {
+  border-color: var(--accent-color);
+}
+
+.subscribe-input:not(:placeholder-shown):required {
+  border-color: red;
+}
+
+.subscribe-button {
+  width: 200px;
+  height: 50px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  outline: none;
 }
