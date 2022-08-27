@@ -603,12 +603,14 @@ fieldset {
 }
 
 .form-field {
+  position: relative;
   margin-bottom: 14px;
 }
 
-.form-field {
-  position: relative;
+.form-field-agreement {
+  margin-left: 15px;
 }
+
 
 .form-field-icon {
   position: absolute;
@@ -645,7 +647,7 @@ fieldset {
   height: 40px;
   padding-top: 14px;
   padding-bottom: 14px;
-  padding-left: 42px;
+  padding-left: 16px;
   padding-right: 15px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -722,20 +724,38 @@ color: #212121;
 
 .modal-close-button {
   position: absolute;
-  top: 17px;
-  right: 17px;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   background-color: var(--background-dark-color);
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+  cursor: pointer;
+  fill: var(--accent-color);
 }
 
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+textarea::placeholder {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .check-text {
@@ -776,6 +796,7 @@ color: #212121;
 }
 
 .agreement-link {
+  color: var(--accent-color);
   border-bottom: 1px;
   border-color: #2196F3;
 }
@@ -783,7 +804,7 @@ color: #212121;
 .subscribe-section {
   margin-left: 815px;
   margin-top: -140px;
-  margin-bottom: 94px;
+  margin-bottom: 0px;
   display: flex;
 }
 
